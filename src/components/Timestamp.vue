@@ -1,15 +1,15 @@
 <template>
-    <div class="timestamp">
-      {{ timestamp }}
-    </div>
+    <span class="timestamp" v-text="timestampPropNieto" />
   </template>
   
   <script setup>
-  import { defineProps } from 'vue';
+
   defineProps({
-    timestamp: {
+    timestampPropNieto: {
+      
       type: String,
-      required: true
-    }
+     
+      default: "A random date",
+    },
   });
   </script>
