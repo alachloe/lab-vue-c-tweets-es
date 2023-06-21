@@ -1,15 +1,14 @@
 <template>
-    <span class="timestamp" v-text="timestampPropNieto" />
-  </template>
-  
-  <script setup>
+  <span class="timestamp">{{timestamp}}</span>
+</template>
 
-  defineProps({
-    timestampPropNieto: {
-      
-      type: String,
-     
-      default: "A random date",
-    },
-  });
-  </script>
+<script setup>
+defineProps({
+timestamp: {
+  type: String,
+  required: true,
+},
+});
+</script>
+
+<style scoped></style>

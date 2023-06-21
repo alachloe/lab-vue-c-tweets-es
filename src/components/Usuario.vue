@@ -1,5 +1,18 @@
+<template>
+  <div class="user">
+    <div class="name">{{ userData.name + '' + userData.handle }}</div>
+  </div>
+</template>
 
-  <span class="user">
-    <span class="name"> USER_NAME </span>
-    <span class="handle">@ USER_HANDLE</span>
-  </span>
+<script setup>
+  defineProps({
+    userData: {
+      type: Object,
+      required: true
+    },
+    handle: {
+      type: String,
+      required: true
+},
+});
+</script>

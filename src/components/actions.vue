@@ -5,5 +5,4 @@
   <i class="far fa-heart"></i>
   <i class="fas fa-share"></i>
 </div> 
-</template><template>
-   
+</template>
